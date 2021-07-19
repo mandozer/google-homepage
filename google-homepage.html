@@ -1,180 +1,280 @@
 <!DOCTYPE html>
 <html>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
 <style>
-.img-searchbar {
-padding: 109px;
-}
-#filler-container {
-    height: 100px;
-    width: 100%;
-    background-color:;
-}
-#top-stuff {
-    background-color:;
-    height: 30px;
-    width: 50%;
-    display: flex;
-padding-top: 15px;
-}
 
-    #tops-stuffs {
-    background-color:;
-    height: 30px;
+.flex-container {
+    display: flex;
+    width:100%
+}
+.flex-container-left {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
     width: 50%;
+    
+}
+.flex-container-right {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    width: 50%;
+  
+    flex-direction: row;
+
+}
+li {
     display: flex;
     flex-direction: row;
-    padding-left: 1075px;
-    padding-top: 15px;
-   
+    
 }
-#both-tops {
-display: flex;
-}
-.flex-small-boxes {
+.ul-right {
     display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
+    
 }
-#small-boxes {
-    display: grid;
-    grid-template-columns: 7px 7px 7px;
-    grid-template-rows: 7px 7px 7px;
+.ul-left {
+    list-style-type: none;
+    padding: 15px;
+    margin: 0px;
+    display: flex;
+
 }
-.small-box1 {
-    height: 5px;
-    width: 5px;
-    background-color: grey;
-}
-.small-box2 {
-    height: 5px;
-    width: 5px;
-    background-color: grey;
-}
-.small-box3 {
-    height: 5px;
-    width: 5px;
-    background-color: grey;
-}
-.small-box4 {
-    height: 5px;
-    width: 5px;
-    background-color: grey;
-}
-.small-box5 {
-    height: 5px;
-    width: 5px;
-    background-color: grey;
-}
-.small-box6 {
-    height: 5px;
-    width: 5px;
-    background-color: grey;
-}
-.small-box7 {
-    height: 5px;
-    width: 5px;
-    background-color: grey;
-}
-.small-box8 {
-    height: 5px;
-    width: 5px;
-    background-color: grey;
-}
-.small-box9 {
-    height: 5px;
-    width: 5px;
-    background-color: grey;
+.signin-div {
+    padding-right: 15px;
 }
 #signin-btn {
-    display: flex;
+    
     padding: 5px 12px 5px 12px;
     background-color: #4285f4;
     font-weight: bold;
     color: white;
     font-family: arial, sans-serif;
     border-radius: 2px;
-
-}
+    display: flex;
+ 
+    }
 .gmail {
     font-family: arial, sans-serif;
     font-size: 13px;
+    display:flex;
 }
 .images {
     padding-left: 15px;
     font-family: arial, sans-serif;
     font-size: 13px;
+    display: flex;
 }
 .about {
     padding-left: 15px;
     font-family: arial, sans-serif;
     font-size: 13px;
     color: #000000DE;
+    margin-left: px;
+    display: flex;
 }
 .store {
     padding-left: 15px;
     font-family: arial, sans-serif;
     font-size: 13px;
     color: #000000DE;
+    display: flex;
 }
-#searchbar-input {
-    width: 487px;
-    height: 34px;
-    border-radius:20px;
-    margin-top: 30px;
+
+.material-icons-outlined {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    
+    }
+.img-searchbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+ height: 400px;  
+    
+}
+    .search-box {
+    display:flex;
+        width: 500px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    outline: black;
+    height: 30px;
+border-radius: 40px;
+padding: 10px;
+align-items: center;
+
+}
+img {
+    display: block;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.search-btn: {
+    display: flex;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mic {
+    display: flex;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-txt {
+    display: flex;
+   border: none;
+    outline: none;
+float: left;
+padding: 0;
+color: black;
+font-size: 16px;
+line-height: 40px;
+width: 400px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+.right-footer-flexbox {
+    display: flex;
+    width: 50%;
+    background-color:;
+    justify-content: flex-end;
+}
+.left-footer-flexbox {
+    display: flex;
+    width: 50%;
+    background-color:;
+}
+.left-ul-footer {
+    display: flex;
+    flex-direction: row;
+}
+.right-ul-footer {
+    display: flex;
+    flex-direction: row;
+}
+.advertising {
+    padding-left: 5px;
+    margin: 0 !important;
+    color: #5f6368;
+}
+.business {
+    padding-left: 27px;
+    margin: 0 !important;
+    color: #5f6368;
+}
+.how {
+    padding-left: 27px;
+    margin: 0 !important;
+    color: #5f6368;
+}
+.privacy {
+    padding-left: 27px;
+    margin: 0 !important;
+    color: #5f6368;
+}
+.terms {
+    padding-left: 27px;
+    margin: 0 !important;
+    color: #5f6368;
+   
+}
+.settings {
+    padding-right: 15px;
+    padding-left: 27px;
+    margin: 0 !important;
+    color: #5f6368;
 }
 
 </style> 
-<div id="both-tops">
-<div id="top-stuff">
-<div class="about">About</div>
-<div class="store">Store</div> 
-</div>
-<div id="tops-stuffs">
-<div class="gmail">Gmail</div> 
-<div class="images">Images</div>
-<div class="flex-small-boxes"> <div id="small-boxes">
-<div class=small-box1></div>
-<div class=small-box2></div>
-<div class=small-box3></div>
-<div class=small-box4></div>
-<div class=small-box5></div>
-<div class=small-box6></div>
-<div class=small-box7></div>
-<div class=small-box8></div>
-<div class=small-box9></div>
-</div></div> <button type="submit" id="signin-btn">Sign in</button>
-</div>
-</div>
-<div id=filler-container>
-
-</div>
 <header>
+<div class="flex-container">
+<div class="flex-container-left">
+<ul class="ul-left">
+<li class="about">About</li>
+<li class="store">Store</li> 
+</ul>
+</div>
+<div class="flex-container-right">
+<ul class="ul-right">
+<li class="gmail">Gmail</li> 
+<li class="images">Images</li>
+<li class="app-icon"><span class="material-icons-outlined">apps</span></li>
+<div class="signin-div">
+<li class="sign-in-btn"><button type="submit" id="signin-btn">Sign in</button></li>
+</div>
+</ul>
+</div>
+</div>
 <title>google home page</title>
 </header>
 <body>
-<center>
-<div class="img-searchbar">
-<div id="image-div">
+<div class="img-searchbox">
 <img src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png alt="google logo" id="image-id">
-</div>
+<div class="search-box"
 <form>
 <label id="search-input-label">
-<input type="search" placeholder="Search Google or type a URL" id="searchbar-input">
-</label>
+<a style="float:left"class="search-btn" href="#">
+<span class="material-icons-outlined">
+search
+</span>
+</a>
+<input class="search-txt" type="text" placeholder="Search Google or type a URL">
+
+<a class="mic" href="#">
+<span class="material-icons-outlined">mic</span>
+</a>
+</label> 
 </form>
+<div class="google-search">
 </div>
-</center>
-
-
-
-
-
-llll
-
-
-
-
+<div class="lucky">
+</div>
+</div>
+</div>
+</div>
 </body>
-
+<footer>
+<div class="left-footer-flexbox">
+<ul class="left-ul-footer">
+<li class="advertising">Advertising</li>
+<li class="business">Business</li>
+<li class="how">How Search works</li>
+</ul>
+</div>
+<div class="right-footer-flexbox">
+<ul class="right-ul-footer">
+<li class="privacy">Privacy</li>
+<li class="terms">Terms</li>
+<li class="settings">Settings</li>
+</ul>
+</div>
+</footer>
 
 </html>
